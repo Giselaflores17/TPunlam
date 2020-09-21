@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio - Formulario</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+ 
+<body>
+	<div id="background">
+	 	<section id="formulario">
+			<div id="interno">	
+				<h3>Rellena tu CV</h3>
+		 
+				<form action="#" method="get" enctype="multipart/form-data">
+					<label for="nombre">Nombre: <span>*</span> </label><br>
+					<input type="text"  placeholder="Ingrese nombre" size="30" maxlength="30" requiered name="nombre" id="nombre" /> <br/>
+			 		<br/>
+				 
+					<label for="apellido">Apellidos: <span>*</span></label> <br/>
+					<input type="text" placeholder="Ingrese apellido" size="30" maxlength="40" required name="apellido" id="apellido" /> <br/>
+				 	<br/>
+
+				 	<label for="pass">Contraseña: <span>*</span></label> <br/>
+					<input type="password" placeholder="Ingrese contraseña" size="20" maxlength="40" required name="pass" id="pass" /> <br/>
+				 	<br/>
+					
+				 	<label for="mail">Correo Electronico: <span>*</span></label> <br/>
+					<input type="email" placeholder="Ingrese un mail" size="30" maxlength="40" required name="pass" id="pass" /> <br/>
+				 	<br/>
+
+				 	<label for="dni">DNI: <span>*</span></label> <br/>
+					<input type="text" placeholder="Ingrese el numero sin puntos" size="30" maxlength="40" required name="pass" id="pass" /> <br/>
+				 	<br/>
+
+				 	<label for="fdn">Fecha de nacimiento: <span>*</span></label> <br/>
+					<input type="date" size="20" required name="fdn" id="fdn" /> <br/>
+				 	<br/>
+
+				 	<label for="sexo">Sexo:</label> <br/>
+					<input type="radio" size="20" name="sexo" id="sexo" value="femenino" checked />Femenino <br/>
+					<input type="radio" size="20" name="sexo" id="sexo" value="masculino" />Masculino
+				 	<br/><br/>
+
+					Sube una imagen:
+	  			 	<input type="file" name="imagensubida" accept="image/png, .jpeg, .jpg, image/gif" required ><br/><br/>
+
+				 	<label for="conocimientos" name="conocimientos"  > Conocimientos:</label><br/>
+					<select name="conocimientos" id="desplegable" >
+					   <option value="1">Adm. de base de datos</option> 
+					   <option value="2">Análisis y programación </option> 
+					   <option value="3">Arquitectura</option>
+					</select>
+			        <br/><br/>
+
+					<input type="checkbox" required checked name="suscripcion" id="suscripcion" />Suscribite al boletín de novedades <br/>
+				 	<br/><br/>
+
+				 	<div id="botones">
+						<input type="submit" value="Enviar Formulario" />
+						<input type="reset" value="Borrar los datos introducidos" />
+					</div>
+			 
+			 	</form>
+			 </div>	
+	 	</section>
+	</div>
+</body>
+ 
+</html>
